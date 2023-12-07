@@ -3,7 +3,7 @@ from .config import *
 from .Github.tags import *
 
 async def MarseyHello():
-    return jsonify(message=message, version=latest)
+    return jsonify(message=message, version=await GetLatestMarseyTag())
 
 
 async def MarseyVersion():
