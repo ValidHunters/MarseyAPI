@@ -1,0 +1,6 @@
+Flask[async]
+aiohttp
+Werkzeug==2.2.2
+configparser
+Flask-Limiter
+waitress
