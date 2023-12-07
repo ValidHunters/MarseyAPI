@@ -11,7 +11,7 @@ async def GetLatestMarseyTag():
 
     marsey_tags = [tag for tag in tags if tag['name'].endswith('-Marsey')]
 
-    latest_tag = marsey_tags[0]['name'].rstrip('-Marsey') if marsey_tags else "v2.3.3"
+    latest_tag = marsey_tags[0]['name'].rstrip('-Marsey')[1:] if marsey_tags else "2.3.3"
     return latest_tag
 
 
@@ -24,5 +24,5 @@ async def GetLatestMarseyMTag():
 
     marsey_m_tags = [tag for tag in tags if tag['name'].endswith('-Marsey-M')]
 
-    latest_tag = marsey_m_tags[0]['name'].rstrip('-Marsey-M') if marsey_m_tags else "v2.3.3"
+    latest_tag = marsey_m_tags[0]['name'].rstrip('-Marsey-M')[1:] if marsey_m_tags else "2.3.3"
     return latest_tag
